@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
-
 import '../widgets/custom_search_icon.dart';
-import '../widgets/note_card.dart';
+import '../widgets/notes_list_view.dart';
 
-class Notesview extends StatelessWidget {
-  const Notesview({super.key});
+class NotesView extends StatelessWidget {
+  const NotesView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.add,
+          ),
+        ),
+      ),
       appBar: AppBar(
         title: const Text(
           "Notes",
@@ -18,12 +26,7 @@ class Notesview extends StatelessWidget {
           CustomSearchIcon(),
         ],
       ),
-      body: ListView(
-        children: [
-          NoteCard(),
-          NoteCard(),
-        ],
-      ),
+      body: const NotesListView(),
     );
   }
 }
