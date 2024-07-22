@@ -9,7 +9,7 @@ class AddNoteBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
+      padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -23,7 +23,7 @@ class AddNoteBottomSheet extends StatelessWidget {
               hint: "Content",
               maxLines: 6,
             ),
-            SizedBox(height: 32,),
+            const SizedBox(height: 32,),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

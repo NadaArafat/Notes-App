@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/add_note_bottom_sheet.dart';
-import '../widgets/custom_search_icon.dart';
+import '../widgets/custom_icon.dart';
 import '../widgets/notes_list_view.dart';
 
 class NotesView extends StatelessWidget {
@@ -25,7 +25,7 @@ class NotesView extends StatelessWidget {
           style: TextStyle(fontSize: 32),
         ),
         actions: const [
-          CustomSearchIcon(),
+          CustomIcon(icon: Icons.search),
         ],
       ),
       body: const NotesListView(),
